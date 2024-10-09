@@ -12,12 +12,12 @@ const Pricing = () => {
     <section>
       <Element name="pricing">
         <div className="container">
-          <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
-            <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
+          <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
+            <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-s3 max-md:mb-11 max-sm:max-w-sm">
               Flexible pricing for teams of all sizes
             </h3>
 
-            <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
+            <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s6/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
               <button
                 className={clsx("pricing-head_btn", monthly && "text-p4")}
                 onClick={() => setMonthly(true)}
@@ -93,7 +93,7 @@ const Pricing = () => {
                   <div
                     className={clsx(
                       "small-2 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase",
-                      index === 1 ? "border-p3 text-p3" : "border-p1 text-p1",
+                      index === 1 ? "border-p3 text-p3" : "border-p3 text-p3",
                     )}
                   >
                     {plan.title}
@@ -103,7 +103,7 @@ const Pricing = () => {
                     <div
                       className={clsx(
                         "h-num flex items-start",
-                        index === 1 ? "text-p3" : "text-p4",
+                        index === 1 ? "text-p3" : "text-s3/90",
                       )}
                     >
                       ${" "}
@@ -123,14 +123,17 @@ const Pricing = () => {
 
                 <div
                   className={clsx(
-                    "body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4",
-                    index === 1 && "border-b",
+                    "body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-s3/80",
+                    index === 1 && "border-b",index === 1 ? "text-s1/80" : "text-s3/90"
                   )}
                 >
                   {plan.caption}
                 </div>
-
-                <ul className="mx-auto space-y-4 xl:px-7">
+                
+                <ul className={clsx(
+                        "mx-auto space-y-4 xl:px-7 ",
+                        index === 1 ? "text-s1/80" : "text-s3/90",
+                      )}>
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
