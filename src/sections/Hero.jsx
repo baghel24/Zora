@@ -23,11 +23,14 @@ const Hero = () => {
             </LinkScroll>
           </div>
 
-          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
+          <div className="absolute top-36 left-[calc(70%-340px)] w-[1230px] pointer-events-none hero-img_res">
+           
             <img
-              src="/images/hero.png"
-              className="size-1230 max-lg:h-auto"
+              src="/images/cameraman_set_3.jpg"
+              className="size-123 max-lg:h-auto"
               alt="hero"
+              width={800}
+              height={500}
             />
           </div>
         </div>

@@ -178,7 +178,7 @@
   /* END of Header */
   /* START of Hero */
   .hero-img_res {
-    @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
+    @apply max-lg:-top-40 max-lg:left-[calc(70%-280px)] max-lg:w-[1160px] max-md:bottom-[-250px] max-md:left-[calc(50%-390px)] max-md:top-auto;
   }
 
   /* END of Hero */
@@ -308,7 +308,7 @@
   }
 
   .social-icon {
-    @apply flex size-10 items-center justify-center rounded-full border-2 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-s4;
+    @apply flex size-12 items-center justify-center rounded-full border-2 border-s4/25 bg-s6 transition-all duration-500 hover:border-s4;
   }
 
   /*  END of Footer*/

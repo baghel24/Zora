@@ -59,8 +59,11 @@ const Features = () => {
             </ul>
           </div>
         </div>
+        
         </div>
+        
       </Element>
+      
     </section>
   );
 };
